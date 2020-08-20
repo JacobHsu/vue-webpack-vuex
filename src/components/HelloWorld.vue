@@ -1,19 +1,22 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <ProductList/>
-
+    <ProductList />
+    <hr />
+    <ShoppingCart />
   </div>
 </template>
 
 <script>
 import ProductList from '@/components/ProductList'
+import ShoppingCart from '@/components/ShoppingCart'
 export default {
   name: 'HelloWorld',
   components: {
-    ProductList
+    ProductList,
+    ShoppingCart
   },
-  data () {
+  data() {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
@@ -23,7 +26,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 ul {
